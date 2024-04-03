@@ -27,7 +27,6 @@ const App = () => {
         return board[a];
       }
     }
-
     return null;
   };
 
@@ -44,12 +43,13 @@ const App = () => {
 
     const winner = checkWin();
     const draw = checkDraw();
+    console.log("draw",draw);
 
     if (winner) {
       setGameActive(false);
       setResultMessage(`Player ${winner} wins!`);
     } else if (draw) {
-      setGameActive(false);
+      setGameActive(true);
       setResultMessage('It\'s a draw!');
     } else {
       setCurrentPlayer(currentPlayer === 'X' ? 'O' : 'X');
