@@ -4,19 +4,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100dvh;
+  width: 100dvw;
   background-color: #21D4FD;
-  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);  
-  color: white;
+  background-image: linear-gradient(0deg, #21D4FD 0%, #B721FF 100%);  
+  color: #ffffff;
 }
-
-#game-board {
+h1{
+  text-align: center;
+  font-size: 40px;
+  background: -webkit-linear-gradient(#00ffb0, #00cfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px 0;
+  padding: 0;
+}
+.game-board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-gap: 10px;
 }
-
-.cell {
+.square {
   width: 100px;
   height: 100px;
   display: flex;
@@ -26,37 +34,55 @@ body {
   cursor: pointer;
   border: 2px solid #ecf0f1;
   background-color: #B721FF;
-  color: white;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
-
-#result-screen {
+.game-info {
   display: none;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   background-color: #21D4FD;
-  background-image: linear-gradient(30deg, #B721FF 0%, #21D4FD 100%);  
+  background-image: linear-gradient(0deg, #B721FF 0%, #21D4FD 100%);   
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
 }
-
-#result-screen h1 {
-  font-size: 36px;
+.statusText {
+  font-size: 24px;
   margin: 0;
-  margin-bottom: 20px;
+  text-align: center;
   padding: 0;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 1px 3px #B721FF;
 }
-
-#new-game-btn {
+.btnReset {
   padding: 10px;
-  font-size: 18px;
-  border: 2px solid #ecf0f1;
-  background: #B721FF;
+  font-size: 20px;
+  font-weight: bold;
+  border: 0;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
   border-radius: 10px;
   color: white;
   cursor: pointer;
+  text-align: center;
+  width: 100px;
+  margin: 10px auto;
+  display: block;
 }
-#new-game-btn:hover {
-  border: 2px solid #ecf0f1;
-  background: #21D4FD;
+.btnReset:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  animation:slidebg 5s linear infinite;
+}
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+@media screen and (max-width:767px) and (min-width: 481px) {
+  body {
+    height: auto;
+    width: auto;
+  }
 }
