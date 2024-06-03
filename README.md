@@ -1,7 +1,5 @@
 **TIC-TAC-TOE-GAME**
 
-Public Project
-
 **OBJECTIVE:**
 
 A basic Tic Tac Toe game built using react.
@@ -18,9 +16,6 @@ The two players take turns putting marks on a 3x3 board. The goal of Tic Tac Toe
 
 A player can choose between two symbols with his opponent, usual game uses “X” and “O”.
 
-<img width="789" alt="image" src="https://github.com/Maulik10592/TicTacToe/assets/43468934/d27cb92a-3b98-4339-b1c1-10a35566e0f6">
-
-
 The player that gets to play first will get the "X" mark (we call him/her player 1) and the player that gets to play second will get the "O" mark (we call him/her player 2).
 
 Player 1 and 2 take turns making moves with Player 1 playing mark “X” and Player 2 playing mark “O”.
@@ -28,3 +23,7 @@ Player 1 and 2 take turns making moves with Player 1 playing mark “X” and Pl
 A player marks any of the 3x3 squares with his mark (“X” or “O”) and their aim is to create a straight line horizontally, vertically or diagonally with two intensions:
 a. One of the players gets three of his/her marks in a row (vertically, horizontally, or diagonally) i.e. that player wins the game.
 b. If no one can create a straight line with their own mark and all the positions on the board are occupied, then the game ends in a draw/tie.
+
+<img width="789" alt="image" src="https://github.com/Maulik10592/TicTacToe/assets/43468934/d27cb92a-3b98-4339-b1c1-10a35566e0f6">
+
+Created by <a href="maulik-vaghela.vercel.app" target="_blank">Maulik</a>
